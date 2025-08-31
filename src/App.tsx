@@ -26,7 +26,7 @@ function App() {
 						path="/display"
 						element={
 							trianglePoints ? (
-								<DisplayPage points={trianglePoints} onBack={() => window.history.back()} />
+								<DisplayPage points={trianglePoints} />
 							) : (
 								<InputPage onSubmit={handleInputSubmit} />
 							)
